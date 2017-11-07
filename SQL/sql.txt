@@ -4,5 +4,5 @@ name varchar(100) not null,
 price decimal(10,2) not null,
 description text,
 created_at timestamp default now(),
-updated_at timestamp
+updated_at timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
